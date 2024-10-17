@@ -3,35 +3,30 @@ package main
 import "fmt" //formatting strings and printing msgs
 
 func main() {
-	//fmt.Println("Hello world")
+	name := "jake"
+	age := 33
+	//print
+	fmt.Print("Hello, \n")
+	fmt.Print("world ")
 
-	//strings
-	var nameOne string = "jude"
-	var nameTwo = "Mike"
-	var nameThree string
+	fmt.Println("Hello klausese")
+	fmt.Println("Goodbuu")
 
-	fmt.Println(nameOne, nameTwo, nameThree)
+	fmt.Println("My name is", name, "i am", age, "years old")
 
-	nameOne = "Kemi"
-	nameThree = "kome"
+	//formatted strings
+	//PrintF (formatted string) %_ = format specifier
+	fmt.Printf("my name is %v and my age is %v \n", name, age)
 
-	//fmt.Println(nameOne, nameTwo, nameThree)
+	fmt.Printf("my name is %q and my age is %q \n", name, age) //quote specifier
 
-	nameFour := "Friday"
-	fmt.Println(nameFour)
+	fmt.Printf("my name is %T and my age is %T \n", name, age) //type specifier
 
-	//int
-	var age int = 30
+	fmt.Printf("you scored %0.1f points \n", 33.2233) //float specifier
 
-	var ageTwo = 21
+	//sprintf save formatted strings
+	var str = fmt.Sprintf("my name is %v and my age is %v \n", name, age)
 
-	ageThree := 33
-
-	fmt.Println(age, ageTwo, ageThree)
-
-	var numOne int8 = 57
-	var numthree float64 = 1.2343334
-
-	fmt.Println(numOne, numthree)
+	fmt.Println("the saved string is: \n", str)
 
 }
