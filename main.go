@@ -1,32 +1,22 @@
 package main
 
-import "fmt" //formatting strings and printing msgs
+import "fmt"
 
 func main() {
-	name := "jake"
-	age := 33
-	//print
-	fmt.Print("Hello, \n")
-	fmt.Print("world ")
+	//var ages = [3]int{22, 23, 21}
 
-	fmt.Println("Hello klausese")
-	fmt.Println("Goodbuu")
+	name := [4]string{"jake", "make", "hhs", "yimde"}
 
-	fmt.Println("My name is", name, "i am", age, "years old")
+	fmt.Println(name)
 
-	//formatted strings
-	//PrintF (formatted string) %_ = format specifier
-	fmt.Printf("my name is %v and my age is %v \n", name, age)
+	//slices
+	var scores = []int{100, 45, 67, 54}
+	scores[2] = 44
+	scores = append(scores, 77)
+	fmt.Println(scores)
 
-	fmt.Printf("my name is %q and my age is %q \n", name, age) //quote specifier
+	//slice ranges
+	rangeOne := name[1:3]
 
-	fmt.Printf("my name is %T and my age is %T \n", name, age) //type specifier
-
-	fmt.Printf("you scored %0.1f points \n", 33.2233) //float specifier
-
-	//sprintf save formatted strings
-	var str = fmt.Sprintf("my name is %v and my age is %v \n", name, age)
-
-	fmt.Println("the saved string is: \n", str)
-
+	fmt.Println(rangeOne)
 }
